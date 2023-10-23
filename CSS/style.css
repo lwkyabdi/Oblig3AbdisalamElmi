@@ -1,0 +1,311 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 100px;
+    color: black;
+    margin-top: -15px;
+}
+
+.logo2{
+    color: black;
+    width: 390px;
+}
+
+header-2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+header-2 h1{
+    font-style: italic;
+    
+}
+
+header-2 span {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+header-2 span input[type=text] {
+    font-size: 24pt;
+    margin-left: 5px;
+    flex-basis: 100%;
+}
+
+header-2 ul{
+    display: flex;
+    gap: 7rem;
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header span {
+    text-align: center;
+    font-style: italic;
+}
+
+.logos {
+    text-align: center;
+    font-style: italic;
+}
+
+header nav ul{
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+header nav ul li{
+    text-decoration: none;
+}
+
+header nav input[type=text] {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.default-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.default-flex h2{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.default-flex article{
+    flex-basis: 33%;
+    min-width: 270px;
+}
+
+.default-flex article img{
+    width: 100%;
+    margin-right: 20px;
+}
+
+.default-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.default-grid article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.default-grid article img {
+    max-width: 80%;
+    margin-left: 60px;
+}
+
+.default-grid article div {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.default-grid article div {
+    margin-right: 10px;
+}
+
+.default-grid article {
+    margin-bottom: 90px;
+}
+
+footer .default-flex nav i {
+    gap: 0.9rem;
+    width: 40px;
+    margin-left: 20px;
+    font-size: 35px;
+    color: black;
+}
+
+main {
+    margin-bottom: 70px;
+}
+
+.nospace {
+    margin-bottom: 400px;
+}
+
+main-3 .default-flex article img {
+    margin-right: 20px;
+}
+
+main-3 .default-flex article h3 {
+    margin-left: auto;
+}
+
+.grid-box {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.shop {
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+}
+
+.default-flex button{
+    display: grid;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.footer.default-flex {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-2.default-flex {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    margin-left: -340px;
+    width: 100%;
+}
+
+.desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.rightside {
+    display: flex;
+    flex-basis: 35%;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    max-height: 70vh;
+    overflow: hidden;
+}
+
+.leftside {
+    flex-basis: 60%;
+    padding: 20px;
+    width: 100px;
+}
+
+.leftside img {
+    width: 400px;
+}
+
+.relatedshoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.relatedshoes .tilbake {
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.relatedshoes h5 {
+    align-items: center;
+}
+
+.relatedshoes img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 556px) {
+    header-2 {
+        display: none;
+    }
+    footer .default-flex nav i {
+        display: none;
+    }
+    .container {
+        display: none;
+    }
+    .container-nav {
+        display: none;
+    }
+    .footer.default-flex {
+        display: none;
+    }
+    main-3 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 556px) {
+    header span {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+    .leftside {
+        display: none;
+    }
+    .rightside {
+        display: none;
+    }
+    .footer-2.default-flex {
+        display: none;
+    }
+
+}
